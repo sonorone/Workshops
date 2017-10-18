@@ -2,16 +2,8 @@
 // Workshop 2: Dynamic Memory
 // File w2_at_home.cpp
 // Version 2.0
-// Date ???????????
-// Author ?????????
-// Description
-// ?????????????????????
-//
-//
-// Revision History
-///////////////////////////////////////////////////////////
-// Name     Date    Reason
-//
+// Date 9/20
+// Author Murawiecki, Damian
 ///////////////////////////////////////////////////////////
 ***********************************************************/
 
@@ -27,6 +19,7 @@ int main() {
 	int count = 0; // the number of kingdoms in the array
 
 	// TODO: declare the pKingdom pointer here (don't forget to initialize it)
+	Kingdom* pKingdom = nullptr;
 
 	cout << "==========\n"
 		<< "Input data\n"
@@ -38,10 +31,12 @@ int main() {
 	if (count < 1) return 1;
 
 	// TODO: allocate dynamic memory here for the pKingdom pointer
+	pKingdom = new Kingdom[count];
 
 	for (int i = 0; i < count; ++i) {
 		cout << "Kingdom #" << i + 1 << ": " << endl;
 		// TODO: add code to accept user input for Kingdom i
+		read(pKingdom[i]);
 	}
 	cout << "==========" << endl << endl;
 
@@ -54,15 +49,30 @@ int main() {
 
 	// expand the array of Kingdoms by 1 element
 	// TODO: allocate dynamic memory for count + 1 Kingdoms
+	Kingdom* pKingdomPlus = nullptr;
+	pKingdomPlus = new Kingdom[count + 1];
+
 	// TODO: copy elements from original array into this newly allocated array
+	for (int i = 0; i < count; ++i) {
+		pKingdomPlus[i] = pKingdom[i];
+	}
+
 	// TODO: deallocate the dynamic memory for the original array
+	delete[] pKingdom;
+	pKingdom = nullptr;
+
 	// TODO: copy the address of the newly allocated array into pKingdom pointer
+	pKingdom = pKingdomPlus;
+
 	// add the new Kingdom
 	cout << "==========\n"
 		<< "Input data\n"
 		<< "==========\n"
 		<< "Kingdom #" << count + 1 << ": " << endl;
+
 	// TODO: accept input for the new element in the array
+	read(pKingdom[count]);
+
 	count++;
 	cout << "==========\n" << endl;
 
@@ -71,6 +81,9 @@ int main() {
 	cout << endl;
 
 	// TODO: deallocate the dynamic memory here
+	delete[] pKingdom;
+	pKingdom = nullptr;
+	pKingdomPlus = nullptr;
 
 	return 0;
 }
