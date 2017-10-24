@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DBA5E7D1F701C97002CD8E1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA5E7C1F701C97002CD8E1 /* main.cpp */; };
+		2D56F1A91F71DCB900A8A4A7 /* w2_in_lab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D56F1A81F71DCB900A8A4A7 /* w2_in_lab.cpp */; };
+		2DBA5E841F701CF2002CD8E1 /* kingdom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA5E831F701CF2002CD8E1 /* kingdom.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D56F1A41F71D8F300A8A4A7 /* Kingdom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kingdom.h; sourceTree = "<group>"; };
+		2D56F1A81F71DCB900A8A4A7 /* w2_in_lab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = w2_in_lab.cpp; sourceTree = "<group>"; };
 		2DBA5E791F701C97002CD8E1 /* ws2-in_lab_macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ws2-in_lab_macOS"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DBA5E7C1F701C97002CD8E1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2DBA5E831F701CF2002CD8E1 /* kingdom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kingdom.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		2DBA5E7B1F701C97002CD8E1 /* ws2-in_lab_macOS */ = {
 			isa = PBXGroup;
 			children = (
-				2DBA5E7C1F701C97002CD8E1 /* main.cpp */,
+				2D56F1A41F71D8F300A8A4A7 /* Kingdom.h */,
+				2D56F1A81F71DCB900A8A4A7 /* w2_in_lab.cpp */,
+				2DBA5E831F701CF2002CD8E1 /* kingdom.cpp */,
 			);
 			path = "ws2-in_lab_macOS";
 			sourceTree = "<group>";
@@ -120,7 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DBA5E7D1F701C97002CD8E1 /* main.cpp in Sources */,
+				2DBA5E841F701CF2002CD8E1 /* kingdom.cpp in Sources */,
+				2D56F1A91F71DCB900A8A4A7 /* w2_in_lab.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +257,7 @@
 				2DBA5E821F701C97002CD8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

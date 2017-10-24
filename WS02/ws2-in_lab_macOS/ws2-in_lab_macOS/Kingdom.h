@@ -11,12 +11,15 @@
 
 #define SIZE 32
 
-struct Kingdom {
+namespace sict {
     
-    char m_name[SIZE];
-    unsigned int m_population;
-};
-
-void display(const Kingdom& kingdom);
-
+    struct Kingdom {
+        
+        char m_name[SIZE];
+        unsigned int m_population;
+    };
+    
+    void display(const Kingdom& kingdom);
+    
+}
 #endif /* kingdom_h */

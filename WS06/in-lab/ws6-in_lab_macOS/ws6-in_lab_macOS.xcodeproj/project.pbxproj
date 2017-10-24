@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		2D35F6F31F95169800BB6717 /* ws6-in_lab_macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ws6-in_lab_macOS"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D35F6FD1F9516B600BB6717 /* w6_in_lab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = w6_in_lab.cpp; sourceTree = "<group>"; };
-		2D35F6FE1F9516B600BB6717 /* Contact.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Contact.cpp; sourceTree = "<group>"; };
+		2D35F6FE1F9516B600BB6717 /* Contact.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Contact.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		2D35F6FF1F9516B700BB6717 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
