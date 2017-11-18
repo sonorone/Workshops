@@ -1,0 +1,4 @@
+﻿  CRA_Account.cpp
+LINK : warning LNK4076: invalid incremental status file '\\vmware-host\Shared Folders\Documents\Codebase\OOP-Workshops\WS03\in-lab\in-lab_win7\x64\Debug\in-lab.ilk' (which will be deleted); linking nonincrementally
+  in-lab.vcxproj -> \\vmware-host\Shared Folders\Documents\Codebase\OOP-Workshops\WS03\in-lab\in-lab_win7\x64\Debug\in-lab.exe
+  in-lab.vcxproj -> \\vmware-host\Shared Folders\Documents\Codebase\OOP-Workshops\WS03\in-lab\in-lab_win7\x64\Debug\in-lab.pdb (Partial PDB)

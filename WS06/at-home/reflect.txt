@@ -1,0 +1,37 @@
+/*
+ * Workshop:    Class with resource.
+ * Student:     Damian Murawiecki
+ * File:        Contact.cpp
+ * Comments:    This class holds information about a person and his/her phone numbers.
+ * Date:        October 24, 2017
+ */
+
+1. the main technical reason for self-assignment check is to prevent an error caused by loosing address to dynamic memory location. the secondary reason is purely logical, analogy would be to move out from a house in order to move in to the same house...
+The above mentioned technical error would happen due to deallocation of dynamic memory to which we will later try to assign new data.
+
+2. I extracted validation piece from the overloaded constructor and re-used the same code ('isValid' member function) in overloaded copy assignment operator. I also tested a second version by reusing the 3 param constructor in order to perform coping and validation but I reversed it and used isValid since this seems faster approach (validating before coping the whole array just to see that the last number - new one, is not valid).
+Even if the new phone was valid, we still waste resources on revalidating the whole array twice just to get the new phone checked.
+
+        /* 2nd solution, slower than [lines 127-136]
+            long long* tmpPhone = nullptr;
+            tmpPhone = new long long[np+1];
+            for (int i = 0; i < np; ++i) {
+                tmpPhone[i] = phone[i];
+            }
+            tmpPhone[np] = newNo;
+            *this = Contact(name, tmpPhone, np+1);
+            delete [] tmpPhone;
+            tmpPhone = nullptr;
+         }
+         */
+
+I also reused copy assignment operator inside copy constructor by directly calling it with '=' . Copy constructor is called when you "create an object by initializing it to an existing object".
+
+Also, I extracted the logic for coping a name into the 'copyShallow' and called it twice rather than using strncpy().
+
+3.
+
+- assigning temporary objects
+- resizing dynamic array to hold only valid data
+- localization / reusing code by using
+- coping an object of a class which holds data in dynamic memory: deep copy/assignment

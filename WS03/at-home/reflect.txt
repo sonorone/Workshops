@@ -1,0 +1,19 @@
+/**********************************************************
+ // Workshop 3: Classes and Privacy
+ // Student: Murawiecki, Damian (121531164)
+ // Reflect.txt
+ // 2017/10/2
+ **********************************************************/
+
+1. Each char string in the CRA_Account class occupies 41 bytes in memory. Each character in this array takes 1 byte each. We can store 40 meaningful characters in those arrays, meaning 1 byte is left for the null terminator. the '\0' identifies end of the char string.
+
+
+
+2. C++ allows overloading functions. In this case, we overloaded member function 'set'. This is allowed because each of the definitions of 'set' has a different signature. C++ compiler matches client code with the corresponding 'set' implementation by recognizing types of the functions' signature. 
+
+
+
+3. I explored privacy in the context of encapsulation, understanding for the first time what this means to hide data from the client code to ensure integrity of the application design. 
+
+
+
