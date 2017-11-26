@@ -1,0 +1,27 @@
+/**
+ * Workshop 4: Constructors
+ * Student: Murawiecki, Damian (121531164)
+ * Reflect.txt
+ * 2017/10/9
+ */
+
+ 1) What is a safe empty state? Could you define another state as the safe empty state?
+    
+1) Safe empty state it's a state of an object through which we prevent the client code from accessing data in an instance of object with no valid data in it. 
+
+
+
+2) I extracted the validation logic from the 5 parameter constructor and wrote two separate member functions to perform validation on name/destination strings and date as well as setting an empty state in both of them.
+
+
+3) canTravelWith(...) member function can access private data member of another instance of an object with the current object because privacy of an object remains within its class.
+
+
+    
+4) strncpy(...) requires index number of the last copied character to prevent for overwriting memory beyond an array's size.
+
+
+
+
+5) Writing constructors to expand interface of an object, allowing initialization of an object with various use cases;
+Extracting and localizing repetitive code to avoid code duplication for easier maintainability it's a vital skill in becoming a programmer. In fact, often employers don't want to hire just programers but rather an engineers who write code strategically.

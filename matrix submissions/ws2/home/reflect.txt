@@ -1,0 +1,16 @@
+/***********************************************************
+// Workshop 2: Dynamic Memory
+// File reflect.txt
+// Date 9/24
+// Author Murawiecki, Damian
+***********************************************************/
+
+Answers:
+
+1) We allocate new dynamic memory for the purpose of resizing our existing array due to the fact that the application might have used subsequent block of the memory.
+
+2) We don’t specifically delete the array which contains the name in the Kingdom structure, however we deallocate the memory for the object Kingdom as a whole, including all its members, hence there is no memory leak in this case.
+
+3) The compiler evaluates the argument types and matches overloaded function so that the appropriate function logic is used.
+
+4) When we copy an address of the pointer A to pointer B, which points to dynamic memory location, when we deallocate memory for B, there is no need to deallocate A. This is because we didn’t copy the whole object in dynamic memory, but rather just an address to the memory location. 

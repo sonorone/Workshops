@@ -1,0 +1,27 @@
+1.	Namespace is an environment which defines scope of all objects defined within it's namespace. Wrapping code in namespace ensures that all entities have unique identification. In a large C++ application, multiple developers write the source code, splitting the code into different namespace (throwing all objects in a unique "bucket", avoids possible naming conflict.
+
+2.	For the purpose of compiling only a module, rather then all source files, the header files provide minimum required information for the translation unit to allow a module's compilation. That way we provide information about the definitions for type verification during compilation.
+
+3.	The header file only provides an interface to its module. 
+
+4.	If you include .cpp file within another .cpp file, it will try to compile the same code twice and results in errors. 
+Also, the implementation files contain a logic for a specific task/problem and will be compiled into a single module which performs its function.   Including .cpp (implementation) files in another .cpp file means it will break the separation rule. 
+
+5.	In a nutshell, I learnt why there are multiples implementation files in a C++ source code and gained an understanding of modular programing. This allows more than one person to write a code simultaneously assuming the system design was established among teams. I better understood the concept of a namespace, and realized that you can use it within more than one file.
+ 
+ 
+Quiz 1 Reflection:
+I made a mistakes in question 6 and 8.
+ 
+"Declare the type of xxx in the statement below"
+My answer was: double xxx = new double[n]
+The answer should be: double* xxx since the "new" keyword returns an address of the first element of an array in the dynamically allocated memory location.
+ 
+"Write a forward declaration of the struct Item defined in the program in question 4 above"
+My answer was: struct Item (int sku; double price);
+The answer should be: struct Item;
+ 
+ 
+ 
+
+

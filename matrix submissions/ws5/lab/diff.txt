@@ -1,0 +1,10 @@
+
+In line number 10 of your output:
+The output should be:
+b + d equals 5/6
+But your output is: 
+b + d equals 7/5
+             ^
+-------------|
+Professor's character ASCII code: hex(35), dec(53)
+un-matched character ASCII code: hex(37), dec(55)
