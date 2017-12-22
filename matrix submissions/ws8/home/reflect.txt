@@ -1,0 +1,22 @@
+
+// OOP244 Workshop 8: Virtual Functions and Abstract Base Classes
+// Author: Murawiecki, Damian (Seneca ID: 121531164)
+//
+
+
+1. Q: What is the difference between an abstract base class and a concrete class?
+   A: Abstract class doesn't not contain implementations of member functions and 
+      doesn't have any data members.
+
+2. Q: Identify the functions that shadow functions of the same name in your solution? 
+   A: ChequingAccount::credit() shadows Account::credit() in the main() function,
+      ChequingAccount::debit() shadows Account::debit() in the main() function,
+      ChequingAccount::monthEnd() shadows SavingsAccount::monthEnd() in the main() function,
+      and ChequingAccount::display() shadows SavingsAccount::display().
+
+3. Q: Explain what have you learned in this workshop.
+   A: Polymorphic objects which can store differnt size variations of different objects in an array. 
+      These objects have to come from the same hierarchy. Storing dyanmic types in one array 
+      remind me of an Audio Equalizer because of each bar (array[0] array[1] array[2]...) 
+      having different height (memory size).
+

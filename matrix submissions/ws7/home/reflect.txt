@@ -1,0 +1,20 @@
+ws7 by Damian Murawiecki
+
+1. Hero class does not need to know about its derived class SuperHero since the latter is lower in the hierarchy.
+
+
+2. Derived class SuperHero have to be aware of its parent class in order to gain access to its parent's data members. I reused the code from the Base Class by invoking the Hero's constructors in SuperHero's constructors, since SuperHero doesn't have modifing access to its parent class to initialize data members of Hero class.
+
+3. My guess is that the compiler is trying to match the operator* and chose Hero operator* since its higher in Hierarchy and risk free operation (accessing only Hero portion of SuperHero class)...
+
+4. TRUE.
+
+
+--- Quiz 5 Reflection ---
+
+Question 11: Write the syntax for accessing a member function named display() for class OOP244, which has been shadowed by a member function of the same name of class OOP244Review.
+
+My incorrect answer: using OOP244::display;
+
+Correct answer: OOP244::display();
+

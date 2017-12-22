@@ -1,0 +1,10 @@
+
+In line number 6 of your output:
+The output should be:
+Interest Rate (%): 5.00
+But your output is: 
+Intereste Rate (%): 5.00
+        ^
+--------|
+Professor's character ASCII code: hex(20), dec(32)
+un-matched character ASCII code: hex(65), dec(101)

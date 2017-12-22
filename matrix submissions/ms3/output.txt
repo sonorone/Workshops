@@ -1,0 +1,28 @@
+Script started on Thu 07 Dec 2017 09:07:22 PM EST
+dmurawiecki@matrix:~/244/ms3> ms3
+Linear: one two 
+As is: 
+one
+two
+
+Enter the following: 
+three<ENTER>
+four<ENTER>
+Ctrl^D<ENTER>
+
+three
+four
+one two three four 
+one
+two
+three
+four
+
+sku match
+non-perishable < perishable
+45|32|131|32
+113.5
+dmurawiecki@matrix:~/244/ms3> exit
+exit
+
+Script done on Thu 07 Dec 2017 09:07:42 PM EST
