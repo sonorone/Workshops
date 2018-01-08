@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D94742A1FE16EF300C509B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D9474291FE16EF300C509B8 /* main.cpp */; };
+		2D9474371FE16F6A00C509B8 /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D9474311FE16F6900C509B8 /* Allocator.cpp */; };
+		2D9474381FE16F6A00C509B8 /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D9474341FE16F6A00C509B8 /* Account.cpp */; };
+		2D9474391FE16F6A00C509B8 /* w8_in_lab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D9474351FE16F6A00C509B8 /* w8_in_lab.cpp */; };
+		2D94743A1FE16F6A00C509B8 /* SavingsAccount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D9474361FE16F6A00C509B8 /* SavingsAccount.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,14 @@
 
 /* Begin PBXFileReference section */
 		2D9474261FE16EF300C509B8 /* ws8-lab_macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ws8-lab_macOS"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D9474291FE16EF300C509B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2D9474301FE16F6900C509B8 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		2D9474311FE16F6900C509B8 /* Allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Allocator.cpp; sourceTree = "<group>"; };
+		2D9474321FE16F6900C509B8 /* SavingsAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavingsAccount.h; sourceTree = "<group>"; };
+		2D9474331FE16F6A00C509B8 /* iAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAccount.h; sourceTree = "<group>"; };
+		2D9474341FE16F6A00C509B8 /* Account.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		2D9474351FE16F6A00C509B8 /* w8_in_lab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = w8_in_lab.cpp; sourceTree = "<group>"; };
+		2D9474361FE16F6A00C509B8 /* SavingsAccount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SavingsAccount.cpp; sourceTree = "<group>"; };
+		2DCF5DD01FE5E5F0004D79D9 /* ws8-home_macOS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "ws8-home_macOS"; path = "../../../at-home/ws8-home_macOS"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,14 @@
 		2D9474281FE16EF300C509B8 /* ws8-lab_macOS */ = {
 			isa = PBXGroup;
 			children = (
-				2D9474291FE16EF300C509B8 /* main.cpp */,
+				2D9474341FE16F6A00C509B8 /* Account.cpp */,
+				2D9474301FE16F6900C509B8 /* Account.h */,
+				2D9474311FE16F6900C509B8 /* Allocator.cpp */,
+				2D9474331FE16F6A00C509B8 /* iAccount.h */,
+				2D9474361FE16F6A00C509B8 /* SavingsAccount.cpp */,
+				2DCF5DD01FE5E5F0004D79D9 /* ws8-home_macOS */,
+				2D9474321FE16F6900C509B8 /* SavingsAccount.h */,
+				2D9474351FE16F6A00C509B8 /* w8_in_lab.cpp */,
 			);
 			path = "ws8-lab_macOS";
 			sourceTree = "<group>";
@@ -119,7 +136,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D94742A1FE16EF300C509B8 /* main.cpp in Sources */,
+				2D9474371FE16F6A00C509B8 /* Allocator.cpp in Sources */,
+				2D9474391FE16F6A00C509B8 /* w8_in_lab.cpp in Sources */,
+				2D9474381FE16F6A00C509B8 /* Account.cpp in Sources */,
+				2D94743A1FE16F6A00C509B8 /* SavingsAccount.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
